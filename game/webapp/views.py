@@ -11,7 +11,7 @@ def show_numbers(request):
         print(request.POST)
         res = request.POST.get("numbers")
         print("RES", res)
-        result = res.split('')
+        result = res.split(' ')
         list_of_numbers = [int(x) for x in result]
         print(list_of_numbers)
         bulls = 0
